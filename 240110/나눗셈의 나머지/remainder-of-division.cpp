@@ -1,24 +1,21 @@
 #include <iostream>
-#include<cmath>
 using namespace std;
 
 int main() {
-    int array[1000] = {0};
-    int a, b, result, sum = 0;
+    int array[10] = { 0 };
+    int a, b, sum = 0;
 
     cin >> a >> b;
 
-    result = a;
-
-    while(result > 0)
+    while (a > 0)
     {
-        array[result % b]++;
-        result = result / b;
+        array[a % b]++;
+        a = a / b;
     }
 
-    for(int i = 0; i < 1000; i++)
+    for (int i = 0; i < 10; i++)
     {
-        sum += pow(array[i], 2);
+        sum += array[i] * array[i];
     }
 
     cout << sum;
