@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int add(int n)
+int Add(int n)
 {
     int result = 0;
 
@@ -18,7 +18,7 @@ int main() {
 
     cin >> n;
 
-    cout << Sum(n);
+    cout << Add(n);
 
     return 0;
 }
