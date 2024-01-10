@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int array[10] = {0};
+    int array[1000] = {0};
     int a, b, result, sum = 0;
 
     cin >> a >> b;
