@@ -14,7 +14,7 @@ int main() {
         a /= b;
     }
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < b; i++)
     {
         sum += array[i] * array[i];
     }
