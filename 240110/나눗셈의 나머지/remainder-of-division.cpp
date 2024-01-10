@@ -7,7 +7,7 @@ int main() {
 
     cin >> a >> b;
 
-    while (a > 0)
+    while (a >= 0)
     {
         array[a % b]++;
         a = a / b;
