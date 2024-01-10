@@ -9,7 +9,8 @@ int main() {
 
     while (a >= 0)
     {
-        array[a % b]++;
+        int index = a % b;
+        array[index]++;
         a /= b;
     }
 
