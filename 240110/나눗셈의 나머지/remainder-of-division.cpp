@@ -1,4 +1,5 @@
 #include <iostream>
+#include<cmath>
 using namespace std;
 
 int main() {
@@ -9,22 +10,15 @@ int main() {
 
     result = a;
 
-    while(true)
+    while(result > 0)
     {
-        if(result > 0)
-        {
-            array[result % b]++;
-            result = result / b;
-        }
-        else
-        {
-            break;
-        }
+        array[result % b]++;
+        result = result / b;
     }
 
     for(int i = 0; i < 10; i++)
     {
-        sum += (array[i] * array[i]);
+        sum += pow(array[i], 2);
     }
 
     cout << sum;
