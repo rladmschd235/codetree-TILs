@@ -7,14 +7,14 @@ int main() {
 
     cin >> a >> b;
 
-    while (a >= 0)
+    while (a > 1)
     {
         int index = a % b;
         array[index]++;
         a /= b;
     }
 
-    for (int i = 0; i < b; i++)
+    for (int i = 0; i < 10; i++)
     {
         sum += array[i] * array[i];
     }
