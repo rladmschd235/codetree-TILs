@@ -50,7 +50,7 @@ int main() {
     for (int i = 0; i < k; i++)
     {
         cin >> sx >> sy;
-        q.push(make_pair(sx, sy));
+        q.push(make_pair(sx-1, sy-1));
         visited[sx-1][sy-1] = true;
     }
 
