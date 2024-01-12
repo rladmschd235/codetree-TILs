@@ -18,14 +18,19 @@ void DFS(int x, int y)
 
     for (int i = 0; i < 2; i++)
     {
-        int new_x = dx[i] + x;
-        int new_y = dy[i] + y;
+        int nx = dx[i] + x;
+        int ny = dy[i] + y;
 
-        if (graph[new_x][new_y]&&!visited[new_x][new_y])
+        if (nx > n || ny > m)
         {
-            graph[new_x][new_y] = vertex_cnt++;
-            visited[new_x][new_y] = true;
-            DFS(new_x, new_y);
+            continue;
+        }
+
+        if (graph[nx][ny])
+        {
+            graph[nx][ny] = vertex_cnt++;
+            visited[nx][ny] = true;
+            DFS(nx, ny);
         }
     }
 }
