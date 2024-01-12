@@ -21,7 +21,7 @@ void DFS(int x, int y)
         int new_x = dx[i] + x;
         int new_y = dy[i] + y;
 
-        if (graph[new_x][new_y])
+        if (graph[new_x][new_y]&&!visited[new_x][new_y])
         {
             graph[new_x][new_y] = vertex_cnt++;
             visited[new_x][new_y] = true;
