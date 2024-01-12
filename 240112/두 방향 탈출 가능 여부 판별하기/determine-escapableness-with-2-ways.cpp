@@ -26,7 +26,7 @@ void DFS(int x, int y)
             continue;
         }
 
-        if (graph[nx][ny])
+        if (graph[nx][ny] && !visited[nx][ny])
         {
             graph[nx][ny] = vertex_cnt++;
             visited[nx][ny] = true;
