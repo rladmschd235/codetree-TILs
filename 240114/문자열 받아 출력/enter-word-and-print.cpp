@@ -1,9 +1,9 @@
 #include <iostream>
-#include <stirng>
+#include <string>
 using namespace std;
 
 int main() {
-    sting str;
+    string str;
     cin >> str;
     cout << str;
     return 0;
