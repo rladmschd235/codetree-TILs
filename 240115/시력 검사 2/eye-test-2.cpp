@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     double d;
     cin >> d;
-    if(d >= 0.1)
+    if(d >= 1.0)
     {
         cout << "High";
     }
