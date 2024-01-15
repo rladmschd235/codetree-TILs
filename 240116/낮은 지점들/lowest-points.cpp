@@ -3,8 +3,9 @@
 using namespace std;
 
 int main() {
-    unordered_map<long long int, long long int> hashmap;
-    int n, x, y, sum = 0;
+    unordered_map<int, int> hashmap;
+    int n, x, y
+    long long int sum = 0;
     cin >> n;
     for(int i = 0; i < n; i++)
     {
