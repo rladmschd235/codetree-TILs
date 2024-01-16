@@ -9,13 +9,13 @@ int main() {
     cin >> word;
     for(int i = 0; i < word.size(); i++)
     {
-        treemap[word[i]]++;
+        hashmap[word[i]]++;
     }
-    for(auto t: treemap)
+    for(auto h: hashmap)
     {
-        if(t.second == 1)
+        if(h.second == 1)
         {
-            cout << t.first;
+            cout << h.first;
             return 0;
         }
     }
