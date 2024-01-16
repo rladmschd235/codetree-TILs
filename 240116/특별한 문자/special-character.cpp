@@ -7,13 +7,13 @@ int main() {
     unordered_map<char, int> hashmap;
     string word;
     cin >> word;
-    for(int i = word.size(); i >= 0; i--)
+    for (int i = word.size(); i >= 0; i--)
     {
         hashmap[word[i]]++;
     }
-    for(auto h: hashmap)
+    for (auto h : hashmap)
     {
-        if(h.second == 1)
+        if (h.second == 1)
         {
             cout << h.first;
             return 0;
