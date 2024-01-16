@@ -7,7 +7,7 @@ int main() {
     unordered_map<char, int> hashmap;
     string word;
     cin >> word;
-    for (int i = word.size(); i >= 0; i--)
+    for (int i = word.size()-1; i >= 0; i--)
     {
         hashmap[word[i]]++;
     }
