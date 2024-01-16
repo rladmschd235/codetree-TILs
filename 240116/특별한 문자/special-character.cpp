@@ -1,10 +1,10 @@
 #include <iostream>
-#include <map>
+#include <unordered_map>
 #include <string>
 using namespace std;
 
 int main() {
-    map<char, int> treemap;
+    unordered_map<char, int> hashmap;
     string word;
     cin >> word;
     for(int i = 0; i < word.size(); i++)
