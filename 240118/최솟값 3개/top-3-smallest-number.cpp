@@ -13,7 +13,7 @@ int main() {
     {
         cin >> m;
         pq.push(-m);
-        if (arr.size() > 2)
+        if (pq.size() > 2)
         {
             result = 1;
             for (int j = 0; j < 3; j++)
