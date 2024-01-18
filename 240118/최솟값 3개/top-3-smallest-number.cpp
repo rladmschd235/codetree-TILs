@@ -15,7 +15,7 @@ int main() {
         cin >> m;
         arr.push_back(m);
 
-        if (i > 1)
+        if (arr.size() > 2)
         {
             result = 1;
             for (int j = 0; j < arr.size(); j++)
