@@ -5,7 +5,8 @@ using namespace std;
 int main() {
     priority_queue<int> pq;
     int tmp[3] = { 0 };
-    int n, m, result = 1;
+    int n, m;
+    long long int result = 1;
 
     cin >> n;
 
