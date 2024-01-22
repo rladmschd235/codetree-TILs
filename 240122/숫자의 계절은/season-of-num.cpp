@@ -3,6 +3,7 @@ using namespace std;
 
 int main() {
     int m;
+    cin >> m;
     if( m >= 3 && m <= 5)
     {
         cout << "Spring";
