@@ -9,6 +9,10 @@ int main() {
     {
         cout << 28;
     }
+    else if(n == 8)
+    {
+        cout << 31;
+    }
     else if(n%2 == 1)
     {
         cout << 31;
