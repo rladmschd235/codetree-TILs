@@ -8,6 +8,7 @@ int main() {
     if(A1 == B1)
     {
         cout << (A2 > B2 ? "A":"B");
+        return 0;
     }
     cout << (A1 > B1 ? "A":"B");
     return 0;
