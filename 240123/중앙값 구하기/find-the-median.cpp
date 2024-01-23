@@ -20,11 +20,11 @@ int main() {
     {
         if(a < c)
         {
-            cout << a;
+            cout << c;
         }
         else
         {
-            cout << c;
+            cout << a;
         }
     }
 
