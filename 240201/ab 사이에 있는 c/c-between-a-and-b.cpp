@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int a, b, c;
-    bool isChecked;
+    bool isChecked = false;
     cin >> a >> b >> c;
     for(int i = a; i < b+1; i++)
     {
