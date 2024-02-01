@@ -12,7 +12,7 @@ int main() {
             isChecked = true;
         }
     }
-    if(!isChecked)
+    if(isChecked)
     {
         cout << 'C';
     }
