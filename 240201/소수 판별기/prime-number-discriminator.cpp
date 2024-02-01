@@ -13,11 +13,11 @@ int main() {
     }
     if(!isChecked)
     {
-        cout << 'P';
+        cout << 'C';
     }
     else
     {
-        cout << 'C';
+        cout << 'P';
     }
     return 0;
 }
