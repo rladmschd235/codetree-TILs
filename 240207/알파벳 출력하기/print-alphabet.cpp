@@ -11,6 +11,10 @@ int main() {
         {
             cout << (char)(65+cnt);
             cnt++;
+            if(cnt == 26)
+            {
+                cnt = 0;
+            }
         }
         cout << "\n";
     }
