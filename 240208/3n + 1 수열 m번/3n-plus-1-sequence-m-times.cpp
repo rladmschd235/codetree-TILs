@@ -24,7 +24,7 @@ int main() {
             }
         }
     
-        cout << cnt;       
+        cout << cnt << endl;       
     }
     return 0;
 }
