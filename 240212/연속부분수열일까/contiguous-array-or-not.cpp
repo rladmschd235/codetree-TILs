@@ -21,27 +21,30 @@ int main() {
     {
         if(A[i] == B[0])
         {
-            idx = i;
-            break;
-        }
-    }
+            int cnt = 0;
 
-    for(int i = 0; i < n2; i++)
-    {
-        if(B[i] != A[i+idx])
-        {
-            isChecked = true;
-            break;
+            for(int j = 0; j < n2; j++)
+            {
+                if(A[i+j] == B[i])
+                {
+                    cnt++;
+                }
+            }
+
+            if(cnt == n2)
+            {
+                isChecked = true;
+            }
         }
     }
 
     if(isChecked)
     {
-        cout << "No";
+        cout << "Yes";   
     }
     else
     {
-        cout << "Yes";
+        cout << "No";
     }
 
     return 0;
