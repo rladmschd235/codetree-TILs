@@ -7,40 +7,40 @@ int main() {
 
     cin >> n1 >> n2;
 
-    for(int i = 0; i < n1; i++)
+    for (int i = 0; i < n1; i++)
     {
         cin >> A[i];
     }
 
-    for(int i = 0; i < n2; i++)
+    for (int i = 0; i < n2; i++)
     {
         cin >> B[i];
     }
 
-    for(int i = 0; i < n1; i++)
+    for (int i = 0; i < n1; i++)
     {
-        if(A[i] == B[0])
+        if (A[i] == B[0])
         {
             int cnt = 0;
 
-            for(int j = 0; j < n2; j++)
+            for (int j = 0; j < n2; j++)
             {
-                if(A[i+j] == B[i])
+                if (A[i + j] == B[j])
                 {
                     cnt++;
                 }
             }
 
-            if(cnt == n2)
+            if (cnt == n2)
             {
                 isChecked = true;
             }
         }
     }
 
-    if(isChecked)
+    if (isChecked == true)
     {
-        cout << "Yes";   
+        cout << "Yes";
     }
     else
     {
