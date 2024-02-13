@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int arr[100] = {0};
+    long long int arr[100] = {0};
     int n;
 
     cin >> n;
@@ -23,7 +23,6 @@ int main() {
                 arr[j+1] = temp;
             }            
         }
-
     }
 
     cout << arr[0] << " " << arr[1];
