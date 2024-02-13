@@ -13,7 +13,7 @@ int main() {
         arr[input]++;
     }
 
-    for(int i = 1; i < 1001; i++)
+    for(int i = 1; i < n+1; i++)
     {
         if(arr[i] == 1 && i > idx)
         {
