@@ -11,14 +11,9 @@ int main() {
     {
         cin >> input;
         arr[input]++;
-
-        if(max > input)
-        {
-            max = input;
-        }
     }
 
-    for(int i = 1; i < max+1; i++)
+    for(int i = 1; i < 1001; i++)
     {
         if(arr[i] == 1 && i > idx)
         {
