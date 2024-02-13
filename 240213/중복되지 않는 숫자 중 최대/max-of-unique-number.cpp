@@ -3,8 +3,7 @@ using namespace std;
 
 int main() {
     int arr[1001] = {0};
-    int n, input, max = 0, idx = -1;
-    bool isNone = false;
+    int n, input, max = -1;
 
     cin >> n;
 
@@ -16,25 +15,13 @@ int main() {
 
     for(int i = 0; i < n; i++)
     {
-        if(arr[i] == max)
+        if(arr[i] == 1 && i > max)
         {
-            isNone = true;
-        }
-        if(arr[i] != 0 && arr[i] > max)
-        {
-            isNone = false;
-            idx = i;
+            max = i;
         }
     }
 
-    if(isNone)
-    {
-        cout << -1;
-    }
-    else
-    {
-        cout << idx;
-    }
+    cout << max;
 
     return 0;
 }
