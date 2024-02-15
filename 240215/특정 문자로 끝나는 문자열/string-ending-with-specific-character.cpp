@@ -4,6 +4,7 @@ using namespace std;
 
 int main() {
     string str[10] = {""};
+    bool isNone = true;
     char input;
 
     for(int i = 0; i < 10; i++)
@@ -17,8 +18,13 @@ int main() {
     {
         if(str[i][str[i].length()-1] == input)
         {
+            isNone = false;
             cout << str[i] << endl;
         }
     }
+
+    if(isNone)
+        cout << "None";
+
     return 0;
 }
