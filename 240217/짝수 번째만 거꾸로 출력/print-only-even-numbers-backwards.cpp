@@ -8,9 +8,9 @@ int main() {
 
     for(int i= 0; i < str.length(); i++)
     {
-        if((str.length()-i-1)%2 == 1)
+        if(((str.length()-1)-i)%2 == 1)
         {
-            cout << str[str.length()-i];
+            cout << str[(str.length()-1)-i];
         }
     }
     return 0;
