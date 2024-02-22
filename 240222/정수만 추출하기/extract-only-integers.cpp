@@ -18,6 +18,7 @@ int main() {
         else
         {
             idx = i;
+            break;
         }
     }
 
