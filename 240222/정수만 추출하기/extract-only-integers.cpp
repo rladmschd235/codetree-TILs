@@ -29,11 +29,11 @@ int main() {
     {
         if(B[i] >= '0' && B[i] <= '9')
         {
-            continue;
+            idx = i;
         }
         else
         {
-            idx = i;
+            break;
         }
     }    
 
