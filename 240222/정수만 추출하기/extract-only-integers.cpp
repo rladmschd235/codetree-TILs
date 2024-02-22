@@ -13,11 +13,10 @@ int main() {
     {
         if(A[i] >= '0' && A[i] <= '9')
         {
-            continue;
+            idx = i;
         }
         else
         {
-            idx = i;
             break;
         }
     }
