@@ -6,6 +6,11 @@ int Function(int n, int m)
     int result = 1;
     int f_n = n, f_m = m;
 
+    if(n == m)
+    {
+        return n;
+    }
+
     while(true)
     {
         if(f_n%2 == 0 && f_m%2 == 0)
