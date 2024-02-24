@@ -3,31 +3,31 @@ using namespace std;
 
 int Function(int n, int m)
 {
-    int result = 1;
-    int f_n = n, f_m = m;
+    int result = 0;
 
     if(n == m)
     {
         return n;
     }
 
-    while(true)
+    if(n > m)
     {
-        if(f_n%2 == 0 && f_m%2 == 0)
+        for(int i = 1; i < n+1; i++)
         {
-            result *= 2;
-            f_n /= 2;
-            f_m /= 2;
+            if(n%i == 0 && m%i == 0)
+            {
+                result = i;
+            }
         }
-        else if(f_n%3 == 0 && f_m%3 == 0)
+    }
+    else
+    {
+        for(int i = 1; i < m+1; i++)
         {
-            result *= 3;
-            f_n /= 3;
-            f_m /= 3;
-        }
-        else
-        {
-            break;
+            if(n%i == 0 && m%i == 0)
+            {
+                result = i;
+            }
         }
     }
 
