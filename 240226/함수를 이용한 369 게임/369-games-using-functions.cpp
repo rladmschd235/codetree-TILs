@@ -1,39 +1,40 @@
 #include <iostream>
 using namespace std;
 
-int func(int a, int b)
+bool func(int n)
 {
-    int result = 0;
-
-    for(int i = a; i < b+1; i++)
+    if(n%3 == 0)
     {
-        int firNum = i%10;
-        int secNum = i/10;
+        return true;
+    }
+    
+    while(n != 0)
+    {
+        int num = n%10;
+        
+        if(num%3 == 0 || num%6 == 0 || num%9 == 0)
+        {
+            return true;
+        }
 
-        if(firNum % 3 == 0)
-        {
-            result++;
-        }
-        else if(secNum % 3 == 0)
-        {
-            result++;
-        }
-        else if(i%3 == 0)
-        {
-            result++;
-        }
-        else
-        {
-            continue;
-        }
+        n /= 10;
     }
 
-    return result;
+    return false;
 }
 
 int main() {
-    int a, b;
+    int a, b, cnt = 0;
     cin >> a >> b;
-    cout << func(a, b);
+    
+    for(int i = a; i < b+1; i++)
+    {
+        if(func(i))
+        {
+            cnt++;
+        }
+    }
+
+    cout << cnt;
     return 0;
 }
