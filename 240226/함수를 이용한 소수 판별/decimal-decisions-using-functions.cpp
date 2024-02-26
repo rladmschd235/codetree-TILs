@@ -10,8 +10,10 @@ bool Search(int n)
             return false;
         }
     }
-
-    return true;
+    if(n != 1)
+        return true;
+    else
+        return false;
 }
 
 int main() {
