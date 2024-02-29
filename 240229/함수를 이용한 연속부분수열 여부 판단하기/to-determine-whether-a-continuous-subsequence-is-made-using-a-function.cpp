@@ -14,7 +14,7 @@ bool Check()
 
         for(int j = 0; j < n2; j++)
         {
-            if(A[i+j] != B[j])
+            if(A[i+j] == B[j])
             {
                 cnt++;
             }
