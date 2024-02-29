@@ -6,21 +6,28 @@ int n1, n2;
 
 bool Check()
 {
-    bool isNotRight = false;
+    bool isRight = false;
 
     for(int i = 0; i < n1; i++)
     {
+        int cnt = 0;
+
         for(int j = 0; j < n2; j++)
         {
             if(A[i+j] != B[j])
             {
-                isNotRight = false;
-                break;
+                cnt++;
             }
+        }
+
+        if(cnt == n2)
+        {
+            isRight = true;
+            break;
         }
     }
 
-    return isNotRight;
+    return isRight;
 }
 
 int main() {
@@ -36,7 +43,7 @@ int main() {
         cin >> B[i];
     }
 
-    if(!Check())
+    if(Check())
     {
         cout << "Yes";
     }
