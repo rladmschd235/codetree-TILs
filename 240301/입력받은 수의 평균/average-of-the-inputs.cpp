@@ -11,13 +11,11 @@ int main() {
         sum += num;
     }
 
-    if(sum/n > 70)
-    {
-        cout << fixed;
-        cout.precision(1);
-        cout << (double)sum/n;
-    }    
-    else
+    cout << fixed;
+    cout.precision(1);
+    cout << (double)sum/n;
+
+    if(sum/n < 71)
     {
         cout << "fail";
     }
