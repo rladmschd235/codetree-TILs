@@ -13,7 +13,7 @@ int main() {
 
     cout << fixed;
     cout.precision(1);
-    cout << (double)sum/n;
+    cout << (double)sum/n << endl;
 
     if(sum/n < 71)
     {
